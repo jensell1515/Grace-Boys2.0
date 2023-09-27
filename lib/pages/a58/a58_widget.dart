@@ -181,6 +181,43 @@ class _A58WidgetState extends State<A58Widget> {
                     selectedDateStyle: FlutterFlowTheme.of(context).titleSmall,
                     inactiveDateStyle: FlutterFlowTheme.of(context).labelMedium,
                   ),
+                  Align(
+                    alignment: AlignmentDirectional(1.00, 1.00),
+                    child: Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 15.0, 0.0),
+                      child: FFButtonWidget(
+                        onPressed: () async {
+                          context.pushNamed('a59');
+                        },
+                        text: '',
+                        icon: Icon(
+                          Icons.arrow_forward_ios_rounded,
+                          size: 15.0,
+                        ),
+                        options: FFButtonOptions(
+                          width: 138.0,
+                          height: 40.0,
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              24.0, 0.0, 24.0, 0.0),
+                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              10.0, 0.0, 0.0, 0.0),
+                          color: FlutterFlowTheme.of(context).primary,
+                          textStyle:
+                              FlutterFlowTheme.of(context).titleSmall.override(
+                                    fontFamily: 'Readex Pro',
+                                    color: Colors.white,
+                                  ),
+                          elevation: 3.0,
+                          borderSide: BorderSide(
+                            color: Colors.transparent,
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(60.0),
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ],

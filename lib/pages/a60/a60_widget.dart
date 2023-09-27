@@ -167,8 +167,8 @@ class _A60WidgetState extends State<A60Widget> {
                       padding:
                           EdgeInsetsDirectional.fromSTEB(70.0, 0.0, 0.0, 0.0),
                       child: FFButtonWidget(
-                        onPressed: () {
-                          print('Button pressed ...');
+                        onPressed: () async {
+                          context.pushNamed('a59');
                         },
                         text: '',
                         icon: Icon(
@@ -201,8 +201,8 @@ class _A60WidgetState extends State<A60Widget> {
                       padding:
                           EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                       child: FFButtonWidget(
-                        onPressed: () {
-                          print('Button pressed ...');
+                        onPressed: () async {
+                          context.pushNamed('a61');
                         },
                         text: '',
                         icon: Icon(

@@ -120,10 +120,19 @@ class _A65WidgetState extends State<A65Widget> {
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         150.0, 0.0, 0.0, 0.0),
-                                    child: Icon(
-                                      Icons.arrow_forward_ios_rounded,
-                                      color: Colors.black,
-                                      size: 28.0,
+                                    child: InkWell(
+                                      splashColor: Colors.transparent,
+                                      focusColor: Colors.transparent,
+                                      hoverColor: Colors.transparent,
+                                      highlightColor: Colors.transparent,
+                                      onTap: () async {
+                                        context.pushNamed('a66');
+                                      },
+                                      child: Icon(
+                                        Icons.arrow_forward_ios_rounded,
+                                        color: Colors.black,
+                                        size: 28.0,
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -155,10 +164,19 @@ class _A65WidgetState extends State<A65Widget> {
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         138.0, 0.0, 0.0, 0.0),
-                                    child: Icon(
-                                      Icons.arrow_forward_ios_rounded,
-                                      color: Colors.black,
-                                      size: 28.0,
+                                    child: InkWell(
+                                      splashColor: Colors.transparent,
+                                      focusColor: Colors.transparent,
+                                      hoverColor: Colors.transparent,
+                                      highlightColor: Colors.transparent,
+                                      onTap: () async {
+                                        context.pushNamed('a67');
+                                      },
+                                      child: Icon(
+                                        Icons.arrow_forward_ios_rounded,
+                                        color: Colors.black,
+                                        size: 28.0,
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -190,10 +208,19 @@ class _A65WidgetState extends State<A65Widget> {
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         138.0, 0.0, 0.0, 0.0),
-                                    child: Icon(
-                                      Icons.arrow_forward_ios_rounded,
-                                      color: Colors.black,
-                                      size: 28.0,
+                                    child: InkWell(
+                                      splashColor: Colors.transparent,
+                                      focusColor: Colors.transparent,
+                                      hoverColor: Colors.transparent,
+                                      highlightColor: Colors.transparent,
+                                      onTap: () async {
+                                        context.pushNamed('a68');
+                                      },
+                                      child: Icon(
+                                        Icons.arrow_forward_ios_rounded,
+                                        color: Colors.black,
+                                        size: 28.0,
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -225,10 +252,19 @@ class _A65WidgetState extends State<A65Widget> {
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         167.0, 0.0, 0.0, 0.0),
-                                    child: Icon(
-                                      Icons.arrow_forward_ios_rounded,
-                                      color: Colors.black,
-                                      size: 28.0,
+                                    child: InkWell(
+                                      splashColor: Colors.transparent,
+                                      focusColor: Colors.transparent,
+                                      hoverColor: Colors.transparent,
+                                      highlightColor: Colors.transparent,
+                                      onTap: () async {
+                                        context.pushNamed('a69');
+                                      },
+                                      child: Icon(
+                                        Icons.arrow_forward_ios_rounded,
+                                        color: Colors.black,
+                                        size: 28.0,
+                                      ),
                                     ),
                                   ),
                                 ],
