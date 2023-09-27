@@ -87,10 +87,21 @@ class _A42WidgetState extends State<A42Widget> {
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Text(
-                                    'Hello World',
-                                    style:
-                                        FlutterFlowTheme.of(context).bodyMedium,
+                                  Flexible(
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          15.0, 10.0, 15.0, 0.0),
+                                      child: Text(
+                                        'Un niño o un adulto con trastorno del espectro autista puede tener problemas con la interacción social y las habilidades de comunicación, incluso presentar cualquiera de los siguientes signos: no responde a su nombre o, en ocasiones, parece no escucharte, se resiste a los abrazos y las caricias; además, parece que prefiere jugar solo y se abstrae en su propio mundo, no suele hacer contacto visual y carece de expresión facial y no expresa emociones ni sentimientos y parece no ser consciente de los sentimientos de los demás.',
+                                        textAlign: TextAlign.center,
+                                        style: FlutterFlowTheme.of(context)
+                                            .titleMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              color: Colors.black,
+                                            ),
+                                      ),
+                                    ),
                                   ),
                                 ],
                               ),

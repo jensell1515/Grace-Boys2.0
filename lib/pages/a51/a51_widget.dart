@@ -90,44 +90,64 @@ class _A51WidgetState extends State<A51Widget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
+                child: FFButtonWidget(
+                  onPressed: () async {
+                    context.pushNamed('a52');
+                  },
+                  text: 'Para nada',
+                  options: FFButtonOptions(
+                    width: 355.0,
+                    height: 70.0,
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                    iconPadding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    color: Color(0xFFCADDE9),
+                    textStyle:
+                        FlutterFlowTheme.of(context).titleMedium.override(
+                              fontFamily: 'Readex Pro',
+                              color: Color(0xFF2E3F57),
+                            ),
+                    elevation: 3.0,
+                    borderSide: BorderSide(
+                      color: Colors.transparent,
+                      width: 1.0,
+                    ),
+                    borderRadius: BorderRadius.circular(60.0),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Expanded(
-                      child: Padding(
+                    FFButtonWidget(
+                      onPressed: () async {
+                        context.pushNamed('a52');
+                      },
+                      text: 'Un poco',
+                      options: FFButtonOptions(
+                        width: 355.0,
+                        height: 70.0,
                         padding: EdgeInsetsDirectional.fromSTEB(
-                            20.0, 0.0, 20.0, 0.0),
-                        child: InkWell(
-                          splashColor: Colors.transparent,
-                          focusColor: Colors.transparent,
-                          hoverColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
-                          onTap: () async {
-                            context.pushNamed('a52');
-                          },
-                          child: Container(
-                            width: 100.0,
-                            height: 70.0,
-                            decoration: BoxDecoration(
-                              color: Color(0xFFCADDE9),
-                              borderRadius: BorderRadius.circular(60.0),
-                            ),
-                            child: Align(
-                              alignment: AlignmentDirectional(0.00, 0.00),
-                              child: Text(
-                                'Para nada',
-                                style: FlutterFlowTheme.of(context)
-                                    .titleMedium
-                                    .override(
-                                      fontFamily: 'Readex Pro',
-                                      color: Color(0xFF2E3F57),
-                                    ),
-                              ),
-                            ),
-                          ),
+                            24.0, 0.0, 24.0, 0.0),
+                        iconPadding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: Color(0xFFCADDE9),
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleMedium.override(
+                                  fontFamily: 'Readex Pro',
+                                  color: Color(0xFF2E3F57),
+                                ),
+                        elevation: 3.0,
+                        borderSide: BorderSide(
+                          color: Colors.transparent,
+                          width: 1.0,
                         ),
+                        borderRadius: BorderRadius.circular(60.0),
                       ),
                     ),
                   ],
@@ -139,39 +159,30 @@ class _A51WidgetState extends State<A51Widget> {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Expanded(
-                      child: Padding(
+                    FFButtonWidget(
+                      onPressed: () async {
+                        context.pushNamed('a52');
+                      },
+                      text: 'Moderadamente',
+                      options: FFButtonOptions(
+                        width: 355.0,
+                        height: 70.0,
                         padding: EdgeInsetsDirectional.fromSTEB(
-                            20.0, 0.0, 20.0, 0.0),
-                        child: InkWell(
-                          splashColor: Colors.transparent,
-                          focusColor: Colors.transparent,
-                          hoverColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
-                          onTap: () async {
-                            context.pushNamed('a52');
-                          },
-                          child: Container(
-                            width: 100.0,
-                            height: 70.0,
-                            decoration: BoxDecoration(
-                              color: Color(0xFFCADDE9),
-                              borderRadius: BorderRadius.circular(60.0),
-                            ),
-                            child: Align(
-                              alignment: AlignmentDirectional(0.00, 0.00),
-                              child: Text(
-                                'Un poco',
-                                style: FlutterFlowTheme.of(context)
-                                    .titleMedium
-                                    .override(
-                                      fontFamily: 'Readex Pro',
-                                      color: Color(0xFF2E3F57),
-                                    ),
-                              ),
-                            ),
-                          ),
+                            24.0, 0.0, 24.0, 0.0),
+                        iconPadding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: Color(0xFFCADDE9),
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleMedium.override(
+                                  fontFamily: 'Readex Pro',
+                                  color: Color(0xFF2E3F57),
+                                ),
+                        elevation: 3.0,
+                        borderSide: BorderSide(
+                          color: Colors.transparent,
+                          width: 1.0,
                         ),
+                        borderRadius: BorderRadius.circular(60.0),
                       ),
                     ),
                   ],
@@ -183,83 +194,30 @@ class _A51WidgetState extends State<A51Widget> {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Expanded(
-                      child: Padding(
+                    FFButtonWidget(
+                      onPressed: () async {
+                        context.pushNamed('a52');
+                      },
+                      text: 'Mucho',
+                      options: FFButtonOptions(
+                        width: 355.0,
+                        height: 70.0,
                         padding: EdgeInsetsDirectional.fromSTEB(
-                            20.0, 0.0, 20.0, 0.0),
-                        child: InkWell(
-                          splashColor: Colors.transparent,
-                          focusColor: Colors.transparent,
-                          hoverColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
-                          onTap: () async {
-                            context.pushNamed('a52');
-                          },
-                          child: Container(
-                            width: 100.0,
-                            height: 70.0,
-                            decoration: BoxDecoration(
-                              color: Color(0xFFCADDE9),
-                              borderRadius: BorderRadius.circular(60.0),
-                            ),
-                            child: Align(
-                              alignment: AlignmentDirectional(0.00, 0.00),
-                              child: Text(
-                                'Moderadamente',
-                                style: FlutterFlowTheme.of(context)
-                                    .titleMedium
-                                    .override(
-                                      fontFamily: 'Readex Pro',
-                                      color: Color(0xFF2E3F57),
-                                    ),
-                              ),
-                            ),
-                          ),
+                            24.0, 0.0, 24.0, 0.0),
+                        iconPadding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: Color(0xFFCADDE9),
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleMedium.override(
+                                  fontFamily: 'Readex Pro',
+                                  color: Color(0xFF2E3F57),
+                                ),
+                        elevation: 3.0,
+                        borderSide: BorderSide(
+                          color: Colors.transparent,
+                          width: 1.0,
                         ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Expanded(
-                      child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            20.0, 0.0, 20.0, 0.0),
-                        child: InkWell(
-                          splashColor: Colors.transparent,
-                          focusColor: Colors.transparent,
-                          hoverColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
-                          onTap: () async {
-                            context.pushNamed('a52');
-                          },
-                          child: Container(
-                            width: 100.0,
-                            height: 70.0,
-                            decoration: BoxDecoration(
-                              color: Color(0xFFCADDE9),
-                              borderRadius: BorderRadius.circular(60.0),
-                            ),
-                            child: Align(
-                              alignment: AlignmentDirectional(0.00, 0.00),
-                              child: Text(
-                                'Mucho',
-                                style: FlutterFlowTheme.of(context)
-                                    .titleMedium
-                                    .override(
-                                      fontFamily: 'Readex Pro',
-                                      color: Color(0xFF2E3F57),
-                                    ),
-                              ),
-                            ),
-                          ),
-                        ),
+                        borderRadius: BorderRadius.circular(60.0),
                       ),
                     ),
                   ],

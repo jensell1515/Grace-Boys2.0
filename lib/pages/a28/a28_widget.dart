@@ -85,10 +85,21 @@ class _A28WidgetState extends State<A28Widget> {
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Hello World',
-                                  style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                Flexible(
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        15.0, 10.0, 15.0, 0.0),
+                                    child: Text(
+                                      'El trastorno de estrés postraumático puede ocurrir a cualquier edad y aparecer luego de hechos como: Una agresión, accidentes automovilísticos, violencia doméstica, desastres naturales, encarcelamiento, agresión sexual, terrorismo, guerra o la muerte de una persona querida.',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .override(
+                                            fontFamily: 'Readex Pro',
+                                            color: Colors.black,
+                                          ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),

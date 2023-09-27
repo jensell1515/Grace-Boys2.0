@@ -85,10 +85,21 @@ class _A25WidgetState extends State<A25Widget> {
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Hello World',
-                                  style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                Flexible(
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        15.0, 10.0, 15.0, 0.0),
+                                    child: Text(
+                                      'Terapia cognitivo-conductual (TCC): La TCC es una forma de terapia que se ha demostrado efectiva en el tratamiento de la ansiedad. Se centra en identificar y cambiar los patrones de pensamiento negativos y las conductas problemáticas asociadas con la ansiedad. La terapia consiste en crear actividades para mantener ocupada la mente y no sobre pensar, de igual forma en el uso se juguetes anti ansiedad como Popis, plastilina, globitos, etc…',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .override(
+                                            fontFamily: 'Readex Pro',
+                                            color: Colors.black,
+                                          ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),

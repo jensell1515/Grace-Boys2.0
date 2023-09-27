@@ -86,10 +86,21 @@ class _A30WidgetState extends State<A30Widget> {
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Hello World',
-                                  style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                Flexible(
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        15.0, 10.0, 15.0, 0.0),
+                                    child: Text(
+                                      'Una persona con TEPT puede presentar una serie de síntomas como el aislamiento de la persona y dificultades al crear nuevos vínculos interpersonales, dificultades de concentración, falta de motivación, ausentismo y dificultades para relacionarse con los demás, pueden dificultar el cumplimiento de responsabilidades y metas.',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .override(
+                                            fontFamily: 'Readex Pro',
+                                            color: Colors.black,
+                                          ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),

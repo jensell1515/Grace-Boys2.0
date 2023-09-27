@@ -85,10 +85,21 @@ class _A22WidgetState extends State<A22Widget> {
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Hello World',
-                                  style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                Flexible(
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        15.0, 10.0, 15.0, 0.0),
+                                    child: Text(
+                                      'Factores relacionados con patologías de naturaleza psicológica (trastornos psicológicos, situaciones traumáticas)\n\nFactores relacionados con el entorno, coyunturales o estructurales, como puede ser una pandemia, una catástrofe natural, un golpe de estado, una guerra.\n\nAcumulación de estrés.\n\nDrogas o alcohol.\n',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .override(
+                                            fontFamily: 'Readex Pro',
+                                            color: Colors.black,
+                                          ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),

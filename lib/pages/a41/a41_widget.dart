@@ -85,10 +85,21 @@ class _A41WidgetState extends State<A41Widget> {
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Hello World',
-                                  style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                Flexible(
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        15.0, 10.0, 15.0, 0.0),
+                                    child: Text(
+                                      'Existen múltiples consecuencias y secuelas derivadas del TEA, entre ellas están las dificultades en la planificación y organización, problemas de comunicación con las personas, sensibilidad sensorial y problemas de salud mental son las más comunes y que afectan a las personas con TEA',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .override(
+                                            fontFamily: 'Readex Pro',
+                                            color: Colors.black,
+                                          ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),

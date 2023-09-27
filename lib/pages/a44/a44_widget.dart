@@ -141,44 +141,28 @@ class _A44WidgetState extends State<A44Widget> {
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Expanded(
-                                    child: Padding(
+                                  FFButtonWidget(
+                                    onPressed: () async {
+                                      context.pushNamed('a07');
+                                    },
+                                    text: 'Seguir',
+                                    options: FFButtonOptions(
+                                      width: 300.0,
+                                      height: 60.0,
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          30.0, 0.0, 30.0, 0.0),
-                                      child: InkWell(
-                                        splashColor: Colors.transparent,
-                                        focusColor: Colors.transparent,
-                                        hoverColor: Colors.transparent,
-                                        highlightColor: Colors.transparent,
-                                        onTap: () async {
-                                          context.pushNamed('a07');
-                                        },
-                                        child: Container(
-                                          width: 100.0,
-                                          height: 71.0,
-                                          decoration: BoxDecoration(
-                                            color: Color(0xFF23255D),
-                                            borderRadius:
-                                                BorderRadius.circular(60.0),
-                                          ),
-                                          child: Align(
-                                            alignment: AlignmentDirectional(
-                                                0.00, 0.00),
-                                            child: Text(
-                                              'Seguir',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Readex Pro',
-                                                        color: Colors.white,
-                                                        fontSize: 20.0,
-                                                      ),
-                                            ),
-                                          ),
-                                        ),
+                                          24.0, 0.0, 24.0, 0.0),
+                                      iconPadding:
+                                          EdgeInsetsDirectional.fromSTEB(
+                                              0.0, 0.0, 0.0, 0.0),
+                                      color: Color(0xFF23255D),
+                                      textStyle: FlutterFlowTheme.of(context)
+                                          .titleMedium,
+                                      elevation: 3.0,
+                                      borderSide: BorderSide(
+                                        color: Colors.transparent,
+                                        width: 1.0,
                                       ),
+                                      borderRadius: BorderRadius.circular(90.0),
                                     ),
                                   ),
                                 ],

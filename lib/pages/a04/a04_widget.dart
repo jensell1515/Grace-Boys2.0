@@ -48,10 +48,14 @@ class _A04WidgetState extends State<A04Widget> {
               children: [
                 Align(
                   alignment: AlignmentDirectional(1.00, 0.00),
-                  child: Icon(
-                    Icons.settings_outlined,
-                    color: FlutterFlowTheme.of(context).secondaryText,
-                    size: 24.0,
+                  child: Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                    child: Icon(
+                      Icons.settings_outlined,
+                      color: Colors.black,
+                      size: 38.0,
+                    ),
                   ),
                 ),
                 Padding(

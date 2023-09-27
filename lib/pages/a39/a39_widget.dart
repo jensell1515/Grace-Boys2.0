@@ -85,10 +85,21 @@ class _A39WidgetState extends State<A39Widget> {
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Hello World',
-                                  style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                Flexible(
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        15.0, 10.0, 15.0, 0.0),
+                                    child: Text(
+                                      'Los trastornos del espectro autista (TEA) son discapacidades del desarrollo causadas por diferencias en el cerebro. Algunas personas con TEA tienen una diferencia conocida, como una afección genética. Todavía no se conocen otras causas. Los científicos creen que los TEA tienen múltiples causas que, al actuar juntas, cambian las maneras más comunes en las que las personas se desarrollan.',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .override(
+                                            fontFamily: 'Readex Pro',
+                                            color: Colors.black,
+                                          ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),

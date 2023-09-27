@@ -119,39 +119,30 @@ class _A52WidgetState extends State<A52Widget> {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Expanded(
-                      child: Padding(
+                    FFButtonWidget(
+                      onPressed: () async {
+                        context.pushNamed('a53');
+                      },
+                      text: 'Guardar',
+                      options: FFButtonOptions(
+                        width: 351.0,
+                        height: 68.0,
                         padding: EdgeInsetsDirectional.fromSTEB(
-                            20.0, 0.0, 20.0, 0.0),
-                        child: InkWell(
-                          splashColor: Colors.transparent,
-                          focusColor: Colors.transparent,
-                          hoverColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
-                          onTap: () async {
-                            context.pushNamed('a53');
-                          },
-                          child: Container(
-                            width: 100.0,
-                            height: 70.0,
-                            decoration: BoxDecoration(
-                              color: Color(0xFFCADDE9),
-                              borderRadius: BorderRadius.circular(60.0),
-                            ),
-                            child: Align(
-                              alignment: AlignmentDirectional(0.00, 0.00),
-                              child: Text(
-                                'Guardar',
-                                style: FlutterFlowTheme.of(context)
-                                    .titleMedium
-                                    .override(
-                                      fontFamily: 'Readex Pro',
-                                      color: Color(0xFF2E3F57),
-                                    ),
-                              ),
-                            ),
-                          ),
+                            24.0, 0.0, 24.0, 0.0),
+                        iconPadding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: Color(0xFFCADDE9),
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleMedium.override(
+                                  fontFamily: 'Readex Pro',
+                                  color: Color(0xFF2E3F57),
+                                ),
+                        elevation: 3.0,
+                        borderSide: BorderSide(
+                          color: Colors.transparent,
+                          width: 1.0,
                         ),
+                        borderRadius: BorderRadius.circular(90.0),
                       ),
                     ),
                   ],
@@ -163,39 +154,30 @@ class _A52WidgetState extends State<A52Widget> {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Expanded(
-                      child: Padding(
+                    FFButtonWidget(
+                      onPressed: () async {
+                        context.pushNamed('a53');
+                      },
+                      text: 'Guardar sin nota',
+                      options: FFButtonOptions(
+                        width: 350.0,
+                        height: 68.0,
                         padding: EdgeInsetsDirectional.fromSTEB(
-                            20.0, 0.0, 20.0, 0.0),
-                        child: InkWell(
-                          splashColor: Colors.transparent,
-                          focusColor: Colors.transparent,
-                          hoverColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
-                          onTap: () async {
-                            context.pushNamed('a53');
-                          },
-                          child: Container(
-                            width: 100.0,
-                            height: 70.0,
-                            decoration: BoxDecoration(
-                              color: Color(0xFFCADDE9),
-                              borderRadius: BorderRadius.circular(60.0),
-                            ),
-                            child: Align(
-                              alignment: AlignmentDirectional(0.00, 0.00),
-                              child: Text(
-                                'Guardar sin nota',
-                                style: FlutterFlowTheme.of(context)
-                                    .titleMedium
-                                    .override(
-                                      fontFamily: 'Readex Pro',
-                                      color: Color(0xFF2E3F57),
-                                    ),
-                              ),
-                            ),
-                          ),
+                            24.0, 0.0, 24.0, 0.0),
+                        iconPadding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: Color(0xFFCADDE9),
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleMedium.override(
+                                  fontFamily: 'Readex Pro',
+                                  color: Color(0xFF2E3F57),
+                                ),
+                        elevation: 3.0,
+                        borderSide: BorderSide(
+                          color: Colors.transparent,
+                          width: 1.0,
                         ),
+                        borderRadius: BorderRadius.circular(90.0),
                       ),
                     ),
                   ],

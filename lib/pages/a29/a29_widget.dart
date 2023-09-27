@@ -85,10 +85,21 @@ class _A29WidgetState extends State<A29Widget> {
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Hello World',
-                                  style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                Flexible(
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        15.0, 10.0, 15.0, 0.0),
+                                    child: Text(
+                                      'Las personas con TEPT pueden experimentar una serie de síntomas psicológicos, como flashbacks (recuerdos involuntarios y vívidos del evento traumático), pesadillas, pensamientos intrusivos, sentimientos de miedo, tristeza, ira, vergüenza o culpa intensa, y dificultades para concentrarse o dormir, también secuelas como dificultades en las relaciones interpersonales, problemas físicos, dificultades laborales y académica.',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .override(
+                                            fontFamily: 'Readex Pro',
+                                            color: Colors.black,
+                                          ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),

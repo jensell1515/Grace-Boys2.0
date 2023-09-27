@@ -48,10 +48,20 @@ class _A53WidgetState extends State<A53Widget> {
               Row(
                 mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [],
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(8.0),
+                    child: Image.asset(
+                      'assets/images/Diseo_sin_ttulo_(8).png',
+                      width: 427.0,
+                      height: 200.0,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ],
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 300.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 180.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -164,52 +174,31 @@ class _A53WidgetState extends State<A53Widget> {
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Expanded(
-                                  child: Padding(
+                                FFButtonWidget(
+                                  onPressed: () async {
+                                    context.pushNamed('a04');
+                                  },
+                                  text: 'Seguir',
+                                  options: FFButtonOptions(
+                                    width: 355.0,
+                                    height: 60.0,
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        40.0, 0.0, 40.0, 0.0),
-                                    child: Container(
-                                      width: 100.0,
-                                      height: 60.0,
-                                      decoration: BoxDecoration(
-                                        color: Color(0xFF8963AC),
-                                        borderRadius:
-                                            BorderRadius.circular(90.0),
-                                      ),
-                                      child: InkWell(
-                                        splashColor: Colors.transparent,
-                                        focusColor: Colors.transparent,
-                                        hoverColor: Colors.transparent,
-                                        highlightColor: Colors.transparent,
-                                        onTap: () async {
-                                          context.pushNamed('a06');
-                                        },
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            Row(
-                                              mainAxisSize: MainAxisSize.max,
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.center,
-                                              children: [
-                                                Text(
-                                                  'Seguir',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .titleLarge
-                                                      .override(
-                                                        fontFamily: 'Outfit',
-                                                        color: Colors.white,
-                                                      ),
-                                                ),
-                                              ],
-                                            ),
-                                          ],
+                                        24.0, 0.0, 24.0, 0.0),
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 0.0, 0.0, 0.0),
+                                    color: Color(0xFF8963AC),
+                                    textStyle: FlutterFlowTheme.of(context)
+                                        .titleMedium
+                                        .override(
+                                          fontFamily: 'Readex Pro',
+                                          color: Colors.white,
                                         ),
-                                      ),
+                                    elevation: 3.0,
+                                    borderSide: BorderSide(
+                                      color: Colors.transparent,
+                                      width: 1.0,
                                     ),
+                                    borderRadius: BorderRadius.circular(90.0),
                                   ),
                                 ),
                               ],

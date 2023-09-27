@@ -85,10 +85,21 @@ class _A40WidgetState extends State<A40Widget> {
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Hello World',
-                                  style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                Flexible(
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        15.0, 10.0, 15.0, 0.0),
+                                    child: Text(
+                                      'Factores genéticos: Se ha observado que existe una predisposición genética al TEA. Se ha encontrado que ciertos genes están asociados con un mayor riesgo de desarrollar el trastorno. Además, se ha observado que el riesgo de tener un hijo con TEA es mayor en familias que ya tienen un miembro afectado, también las mutaciones genéticas y disfunción cerebral son consideradas causas.',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .override(
+                                            fontFamily: 'Readex Pro',
+                                            color: Colors.black,
+                                          ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),

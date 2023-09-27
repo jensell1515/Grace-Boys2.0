@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1085769695846",
+    "project_id": "metamorphosis-5155b",
+    "storage_bucket": "metamorphosis-5155b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085769695846:android:9e2725f92b4604ff5e63a7",
+        "android_client_info": {
+          "package_name": "com.mycompany.metamorphosis"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2zN7dseZ8w5WpULxJxqhJmMcgxchhAfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

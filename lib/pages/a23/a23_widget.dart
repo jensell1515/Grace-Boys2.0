@@ -85,10 +85,21 @@ class _A23WidgetState extends State<A23Widget> {
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Hello World',
-                                  style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                Flexible(
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        15.0, 10.0, 15.0, 0.0),
+                                    child: Text(
+                                      'Pueden ser significativos y afectar varios aspectos de la vida de la persona. A nivel emocional, la ansiedad puede generar una sensación constante de nerviosismo, preocupación excesiva, irritabilidad, dificultad para concentrarse y cambios en el estado de ánimo. A nivel físico, puede manifestarse a través de síntomas como malestares e incomodidades trayendo un daño en todo nuestro cuerpo y salud, de esa manera afectando nuestras relaciones interpersonales, personales, o rendimiento en todas las actividades que se realizan a diario.',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .override(
+                                            fontFamily: 'Readex Pro',
+                                            color: Colors.black,
+                                          ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),

@@ -86,10 +86,21 @@ class _A36WidgetState extends State<A36Widget> {
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Hello World',
-                                  style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                Flexible(
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        15.0, 10.0, 15.0, 0.0),
+                                    child: Text(
+                                      'Una persona con déficit de atención presenta factores múltiples como la impulsividad, desorganización y problemas para establecer prioridades, problemas para realizar múltiples tareas a la vez, actividad excesiva o inquietud, baja tolerancia a la frustración, cambios de humor frecuentes, problemas para realizar tareas y terminarlas, temperamento irascible y problemas para enfrentar el estrés',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .override(
+                                            fontFamily: 'Readex Pro',
+                                            color: Colors.black,
+                                          ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),

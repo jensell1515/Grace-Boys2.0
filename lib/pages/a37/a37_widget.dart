@@ -85,10 +85,21 @@ class _A37WidgetState extends State<A37Widget> {
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Hello World',
-                                  style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                Flexible(
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        15.0, 10.0, 15.0, 0.0),
+                                    child: Text(
+                                      'Terapia conductual: La terapia conductual puede ser útil para enseñar estrategias de manejo de conducta y habilidades sociales a las personas con TDAH. Esto puede incluir técnicas de modificación de conducta, entrenamiento en habilidades sociales y programas de refuerzo positivo. Es importante que las personas con TDAH y sus familias reciban educación sobre el trastorno y las estrategias de manejo. Esto puede incluir trabajar con profesionales de la salud mental, recibir información y recursos sobre el TDAH, y buscar apoyo en grupos de ayuda mutua o asociaciones especializadas.',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .override(
+                                            fontFamily: 'Readex Pro',
+                                            color: Colors.black,
+                                          ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),

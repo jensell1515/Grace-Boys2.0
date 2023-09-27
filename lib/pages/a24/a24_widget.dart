@@ -86,10 +86,21 @@ class _A24WidgetState extends State<A24Widget> {
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Hello World',
-                                  style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                Flexible(
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        15.0, 10.0, 15.0, 0.0),
+                                    child: Text(
+                                      'Las personas con ansiedad suelen presentar síntomas comunes como las preocupaciones excesivas, fatiga e intranquilidad, y el mayormente conocido ataque de pánico; Los ataques de pánico producen una sensación de miedo intensa y abrumadora que puede llegar a ser debilitante. Este miedo extremo suele estar acompañado por ritmo cardíaco rápido, sudoración, temblores, falta de aliento, presión en el pecho, náusea y miedo a morir o perder el control.',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .override(
+                                            fontFamily: 'Readex Pro',
+                                            color: Colors.black,
+                                          ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),

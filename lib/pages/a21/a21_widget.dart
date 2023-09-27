@@ -85,10 +85,21 @@ class _A21WidgetState extends State<A21Widget> {
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Hello World',
-                                  style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                Flexible(
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        15.0, 10.0, 15.0, 0.0),
+                                    child: Text(
+                                      'La ansiedad es una respuesta natural del cuerpo ante situaciones percibidas como amenazantes o estresantes. Es una emoción normal que todos experimentamos en ciertos momentos de nuestras vidas. Sin embargo, cuando la ansiedad se vuelve persistente, abrumadora e interfiere en nuestras actividades diarias, puede compartirse en un trastorno de ansiedad.',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .override(
+                                            fontFamily: 'Readex Pro',
+                                            color: Colors.black,
+                                          ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),

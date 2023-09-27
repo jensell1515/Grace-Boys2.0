@@ -1,3 +1,4 @@
+import '/flutter_flow/flutter_flow_calendar.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -159,9 +160,26 @@ class _A58WidgetState extends State<A58Widget> {
                       ),
                     ],
                   ),
-                  Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [],
+                ],
+              ),
+              Column(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  FlutterFlowCalendar(
+                    color: FlutterFlowTheme.of(context).primary,
+                    iconColor: FlutterFlowTheme.of(context).secondaryText,
+                    weekFormat: false,
+                    weekStartsMonday: false,
+                    rowHeight: 64.0,
+                    onChange: (DateTimeRange? newSelectedDate) {
+                      setState(
+                          () => _model.calendarSelectedDay = newSelectedDate);
+                    },
+                    titleStyle: FlutterFlowTheme.of(context).headlineSmall,
+                    dayOfWeekStyle: FlutterFlowTheme.of(context).labelLarge,
+                    dateStyle: FlutterFlowTheme.of(context).bodyMedium,
+                    selectedDateStyle: FlutterFlowTheme.of(context).titleSmall,
+                    inactiveDateStyle: FlutterFlowTheme.of(context).labelMedium,
                   ),
                 ],
               ),

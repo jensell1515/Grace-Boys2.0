@@ -85,10 +85,21 @@ class _A34WidgetState extends State<A34Widget> {
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Hello World',
-                                  style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                Flexible(
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        15.0, 10.0, 15.0, 0.0),
+                                    child: Text(
+                                      'La genética. El trastorno por déficit de atención/hiperactividad puede ser hereditario, y los estudios indican que los genes podrían estar involucrados.\n\nEl entorno.Algunos factores del entorno también pueden aumentar el riesgo, como la exposición al plomo durante la infancia.\n\nProblemas durante el desarrollo. Los problemas en el sistema nervioso central en momentos fundamentales del desarrollo pueden tener influencia en el trastorno.\n',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .override(
+                                            fontFamily: 'Readex Pro',
+                                            color: Colors.black,
+                                          ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),

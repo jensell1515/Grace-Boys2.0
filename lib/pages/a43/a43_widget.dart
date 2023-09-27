@@ -85,10 +85,21 @@ class _A43WidgetState extends State<A43Widget> {
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Hello World',
-                                  style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                Flexible(
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        15.0, 10.0, 15.0, 0.0),
+                                    child: Text(
+                                      'Hay muchos tipos de tratamiento disponibles. Estos tratamientos generalmente se pueden dividir en las siguientes categorías, aunque algunos impliquen la aplicación de más de un enfoque: conductuales, del desarrollo, educacionales, socio-relacionales, psicológico, complementarios y alternativos',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .override(
+                                            fontFamily: 'Readex Pro',
+                                            color: Colors.black,
+                                          ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),

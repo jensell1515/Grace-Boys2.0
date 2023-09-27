@@ -86,10 +86,21 @@ class _A31WidgetState extends State<A31Widget> {
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Hello World',
-                                  style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
+                                Flexible(
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        15.0, 10.0, 15.0, 0.0),
+                                    child: Text(
+                                      'Terapia de exposición: La terapia de exposición es un enfoque terapéutico efectivo para el TEPT. Puede implicar la exposición gradual y controlada a los recuerdos, pensamientos y situaciones que desencadenan el estrés postraumático. Esto se hace en un entorno seguro y con el apoyo de un terapeuta especializado.',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .override(
+                                            fontFamily: 'Readex Pro',
+                                            color: Colors.black,
+                                          ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),
